@@ -7,21 +7,44 @@ export const GlobalStyles = createGlobalStyle`
     transition: background-color 0.50s linear, color 0.3s linear ;
     font-family: 'Inter', sans-serif;
     margin:0;
-    overflow-y: scroll;
     &::-webkit-scrollbar-track
     {
-      background-color: #F5F5F5;
+      background-color: ${({ theme }) => {
+        if (theme.name === "light") {
+          return "#F5F5F5";
+        } else {
+          return "#2e2e2e";
+        }
+      }};
     }
 
     &::-webkit-scrollbar
     {
-      width: 10px;
-      background-color: #F5F5F5;
+      width: 15px;
+      background-color: ${({ theme }) => {
+        if (theme.name === "light") {
+          return "#F5F5F5";
+        } else {
+          return "#2e2e2e";
+        }
+      }};
     }
     &::-webkit-scrollbar-thumb
       {
-          background-color: #d4d4d4;
-          border: 1px solid white;
+          background-color: ${({ theme }) => {
+            if (theme.name === "light") {
+              return "#d4d4d4";
+            } else {
+              return "black";
+            }
+          }};
+          border: 2px solid ${({ theme }) => {
+            if (theme.name === "light") {
+              return "#d4d4d4";
+            } else {
+              return "#2e2e2e";
+            }
+          }};;
           border-radius:10px;
       }
   }
