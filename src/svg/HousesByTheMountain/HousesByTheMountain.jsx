@@ -6,7 +6,7 @@ const HousesByTheMountain = ({ color1, color2 }) => {
     <SVG
       width="1920"
       height="422"
-      viewBox="0 0 1920 250"
+      viewBox="0 0 1920 230"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
