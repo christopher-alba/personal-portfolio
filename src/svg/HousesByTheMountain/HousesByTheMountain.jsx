@@ -61,7 +61,7 @@ const HousesByTheMountain = ({ color1, color2 }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={color2} />
-          <stop offset="0.9999" stop-color={color2} stop-opacity="0.976042" />
+          <stop offset="0.9999" stop-color={color2} stop-opacity="1" />
           <stop offset="1" stop-color={color2} stop-opacity="0" />
         </linearGradient>
       </defs>
