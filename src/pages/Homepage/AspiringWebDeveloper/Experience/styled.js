@@ -26,6 +26,9 @@ export const Header = styled("h1")`
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 0;
+  @media (max-width: 400px) {
+    display: none;
+  }
 `;
 
 export const Paragraph = styled("p")`
@@ -69,17 +72,6 @@ export const DateHeader = styled("h3")`
   margin-top: 0;
   margin-bottom: 0;
 `;
-export const Logo = styled("img")`
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 140px;
-  border-bottom-left-radius: 30px;
-  width: 140px;
-  @media (max-width: 1300px) {
-    display: none;
-  }
-`;
 
 export const LogoHeaderWrapper = styled("div")`
   display: flex;
@@ -91,18 +83,15 @@ export const LogoHeaderWrapper = styled("div")`
 `;
 
 export const LogoBlock = styled("img")`
-  @media (min-width: 1300px) {
-    display: none;
-  }
   width: 60px;
   height: 60px;
-  margin-right: 20px;
+  margin-left: 20px;
   display: inline;
   border-radius: 30px;
   @media (max-width: 400px) {
     width: 100%;
     height: auto;
-    margin-right: 0px;
+    margin-left: 0px;
     margin-bottom: 20px;
   }
 `;

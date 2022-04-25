@@ -5,7 +5,6 @@ import {
   Anchor,
   DateHeader,
   Header,
-  Logo,
   LogoBlock,
   LogoHeaderWrapper,
   MainDiv,
@@ -28,10 +27,9 @@ const Experience = ({
   };
   return (
     <MainDiv key={company}>
-      <Logo src={logo} alt={company} />
       <LogoHeaderWrapper style={{ display: "flex", alignItems: "center" }}>
-        <LogoBlock src={logo} alt={company} />
         <Header>{company}</Header>
+        <LogoBlock src={logo} alt={company} />
       </LogoHeaderWrapper>
       <SubHeader>
         {role} - <strong>{hours} Hours</strong>

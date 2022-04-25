@@ -24,6 +24,7 @@ export const ExperienceWrapper = styled("div")`
   top: -150px;
   width: 80%;
   margin: 0 auto;
+  border-bottom: 4px solid ${({ theme }) => theme.colors.tertiary};
   @media (max-width: 600px) {
     width: 98%;
   }

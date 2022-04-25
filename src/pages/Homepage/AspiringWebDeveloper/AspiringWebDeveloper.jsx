@@ -61,6 +61,17 @@ const AspiringWebDeveloper = () => {
           website="https://www.jasper.io/nz/"
           logo="./images/jasper-logo.png"
         />
+        <Experience
+          company="Enspiral Dev Academy"
+          description={[
+            "EDA’s curriculum is designed and taught by currently employed software developers and was designed to turn someone from no experience in software to a full stack web developer in 15 weeks. A normal day in this bootcamp was usually around 10-12 hours of work a day. I was exposed to agile software practices when taking part in group projects. Pair programming happens almost everyday after each lecture. All our activities were version controlled in git and managed in github. Every friday there is a group project which lasts for one day. In this bootcamp I developed my communication skills, leadership skills, understanding of team dynamics, self awareness, technical skills, and other soft skills. During the lockdown, we continued to work remotely, building projects with up to teams of 20 people collaborating online. We would give and receive feedback to each other on a regular basis to allow ourselves to grow at a faster rate. In summary, it was a tough but enjoyable experience that gave me good insight into what software development is like in a professional environment.",
+          ]}
+          role="Web Development Bootcamp Student"
+          hours="800"
+          dates="March 2020 to June 2020"
+          website="https://devacademy.co.nz/"
+          logo="./images/eda.png"
+        />
       </ExperienceWrapper>
     </>
   );
