@@ -52,7 +52,7 @@ export const CVButton = styled("button")`
     background: ${({ theme }) => theme.colors.tertiary2};
   }
   transition: 250ms linear;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 100%;
   }
   cursor: pointer;
@@ -64,7 +64,7 @@ export const ButtonWrapper = styled("div")`
   & ${CVButton} {
     margin-right: 0px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     display: none;
   }
 `;
@@ -78,7 +78,7 @@ export const ListButton = styled("button")`
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 1rem;
   border-radius: 5px;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     display: block;
   }
   cursor: pointer;
@@ -96,7 +96,7 @@ export const NavMenu = styled("div")`
   & ${Button}:first-of-type {
     margin-top: 10px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     display: block;
   }
 `;

@@ -1,0 +1,57 @@
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+import {
+  Anchor,
+  DateHeader,
+  Header,
+  Logo,
+  LogoBlock,
+  LogoHeaderWrapper,
+  MainDiv,
+  Paragraph,
+  SubHeader,
+  Toggle,
+} from "./styled";
+const Experience = ({
+  company,
+  description,
+  role,
+  hours,
+  website,
+  logo,
+  dates,
+}) => {
+  const [showDescription, setShowDescription] = useState(false);
+  const handleToggle = () => {
+    setShowDescription(!showDescription);
+  };
+  return (
+    <MainDiv key={company}>
+      <Logo src={logo} alt={company} />
+      <LogoHeaderWrapper style={{ display: "flex", alignItems: "center" }}>
+        <LogoBlock src={logo} alt={company} />
+        <Header>{company}</Header>
+      </LogoHeaderWrapper>
+      <SubHeader>
+        {role} - <strong>{hours} Hours</strong>
+      </SubHeader>
+      <DateHeader>{dates}</DateHeader>
+      <Anchor href={website} target="_blank" rel="noreferrer">
+        Visit Website
+      </Anchor>
+      {showDescription &&
+        description.map((paragraph) => <Paragraph>{paragraph}</Paragraph>)}
+      <Toggle onClick={handleToggle}>
+        {showDescription ? (
+          <FontAwesomeIcon icon={faChevronUp} />
+        ) : (
+          <FontAwesomeIcon icon={faChevronDown} />
+        )}
+        {showDescription ? " Show Less" : " Show More"}
+      </Toggle>
+    </MainDiv>
+  );
+};
+
+export default Experience;

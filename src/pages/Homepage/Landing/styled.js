@@ -37,7 +37,7 @@ export const Button = styled("button")`
     background: ${({ theme }) => theme.colors.secondaryHover};
   }
   transition: 250ms linear;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 100%;
   }
   cursor: pointer;
