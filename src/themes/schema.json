@@ -1,0 +1,26 @@
+{
+  "data": {
+    "light": {
+      "name": "light",
+      "colors": {
+        "primary": "white",
+        "primaryHover": "#cfcfcf",
+        "dropShadow": "rgba(0,0,0,0.3)",
+        "secondary": "black",
+        "secondaryHover": "#575757",
+        "tertiary": "8000FF"
+      }
+    },
+    "dark": {
+      "name": "dark",
+      "colors": {
+        "primary": "black",
+        "primaryHover": "#575757",
+        "dropShadow": "rgba(0,0,0,0.3)",
+        "secondary": "white",
+        "secondaryHover": "#cfcfcf",
+        "tertiary": "8000FF"
+      }
+    }
+  }
+}
