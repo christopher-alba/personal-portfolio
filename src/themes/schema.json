@@ -8,7 +8,8 @@
         "dropShadow": "rgba(0,0,0,0.3)",
         "secondary": "black",
         "secondaryHover": "#575757",
-        "tertiary": "8000FF"
+        "tertiary": "#8000FF",
+        "tertiary2": "#9830ff"
       }
     },
     "dark": {
@@ -19,7 +20,8 @@
         "dropShadow": "rgba(0,0,0,0.3)",
         "secondary": "white",
         "secondaryHover": "#cfcfcf",
-        "tertiary": "8000FF"
+        "tertiary": "#ae5cff",
+        "tertiary2": "#9830ff"
       }
     }
   }

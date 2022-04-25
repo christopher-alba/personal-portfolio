@@ -2,10 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    height:200vh;
     background: ${({ theme }) => theme.colors.primary} !important;
     color: ${({ theme }) => theme.colors.secondary} !important;
-    transition: all 0.50s linear;
+    transition: background-color 0.50s linear, color 0.3s linear ;
+    font-family: 'Inter', sans-serif;
+    margin:0;
     overflow-y: scroll;
     &::-webkit-scrollbar-track
     {
