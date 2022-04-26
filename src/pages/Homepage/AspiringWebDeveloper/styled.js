@@ -26,6 +26,6 @@ export const ExperienceWrapper = styled("div")`
   margin: 0 auto;
   border-bottom: 4px solid ${({ theme }) => theme.colors.tertiary};
   @media (max-width: 600px) {
-    width: 98%;
+    width: 90%;
   }
 `;
