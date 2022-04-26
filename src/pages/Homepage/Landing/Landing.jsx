@@ -5,7 +5,11 @@ import HousesByTheMountain from "../../../svg/HousesByTheMountain/HousesByTheMou
 import { Button, Heading, Img, LandingDivMain } from "./styled";
 const Landing = () => {
   const theme = useContext(ThemeContext);
-  console.log(theme);
+  const handleClick = () => {
+    document.getElementsByClassName("aspiring")[0].scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <LandingDivMain>
       <Container
@@ -20,7 +24,7 @@ const Landing = () => {
           Final year Computer Systems Engineering student at The University of
           Auckland
         </p>
-        <Button>Learn More</Button>
+        <Button onClick={handleClick}>Learn More</Button>
       </Container>
       <HousesByTheMountain
         color1={theme.colors.tertiary}

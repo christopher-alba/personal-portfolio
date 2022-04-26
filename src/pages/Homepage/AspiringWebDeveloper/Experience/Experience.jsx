@@ -32,7 +32,12 @@ const Experience = ({
         <LogoBlock src={logo} alt={company} />
       </LogoHeaderWrapper>
       <SubHeader>
-        {role} - <strong>{hours} Hours</strong>
+        {role}{" "}
+        {hours && (
+          <>
+            - <strong> {hours} Hours</strong>
+          </>
+        )}
       </SubHeader>
       <DateHeader>{dates}</DateHeader>
       <Anchor href={website} target="_blank" rel="noreferrer">

@@ -6,7 +6,7 @@ import Experience from "./Experience";
 
 const AspiringWebDeveloper = () => {
   return (
-    <>
+    <div className="aspiring">
       <HeroDiv>
         <Container>
           <Header>Aspiring Web Developer</Header>
@@ -73,7 +73,7 @@ const AspiringWebDeveloper = () => {
           logo="./images/eda.png"
         />
       </ExperienceWrapper>
-    </>
+    </div>
   );
 };
 
