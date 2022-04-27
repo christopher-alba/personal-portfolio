@@ -1,5 +1,6 @@
 import React from "react";
 import AspiringWebDeveloper from "./AspiringWebDeveloper";
+import Education from "./Education";
 import Landing from "./Landing";
 import Projects from "./Projects";
 import Technologies from "./Technologies";
@@ -11,6 +12,7 @@ const Homepage = () => {
       <AspiringWebDeveloper />
       <Technologies />
       <Projects />
+      <Education />
     </>
   );
 };
