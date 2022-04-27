@@ -10,6 +10,8 @@ const webTechnologies = [
   "Javascript",
   "JQuery",
   "React",
+  "Graphql",
+  "Apollo",
   "Node.js",
   "Express.js",
   "C#",

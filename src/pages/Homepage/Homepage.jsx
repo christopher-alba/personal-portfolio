@@ -1,6 +1,7 @@
 import React from "react";
 import AspiringWebDeveloper from "./AspiringWebDeveloper";
 import Landing from "./Landing";
+import Projects from "./Projects";
 import Technologies from "./Technologies";
 
 const Homepage = () => {
@@ -9,6 +10,7 @@ const Homepage = () => {
       <Landing />
       <AspiringWebDeveloper />
       <Technologies />
+      <Projects />
     </>
   );
 };
