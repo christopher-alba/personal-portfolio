@@ -24,6 +24,9 @@ const Navbar = ({ setSelectedTheme, selectedTheme }) => {
     e.preventDefault();
     setMenu(!menu);
   };
+  const goToContact = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
     <NavMainDiv>
       <Container display="flex" justifyContent="space-between">
@@ -40,7 +43,7 @@ const Navbar = ({ setSelectedTheme, selectedTheme }) => {
             )}{" "}
             {selectedTheme.name === "dark" ? "Light" : "Dark"}
           </Button>
-          <Button>Contact</Button>
+          <Button onClick={goToContact}>Contact</Button>
           <Link target="_blank" rel="noreferrer" to="./cv.pdf">
             <CVButton tabIndex={-1}>
               <FontAwesomeIcon icon={faDownload} /> CV
@@ -59,7 +62,7 @@ const Navbar = ({ setSelectedTheme, selectedTheme }) => {
               )}{" "}
               {selectedTheme.name === "dark" ? "Light" : "Dark"}
             </Button>
-            <Button>Contact</Button>
+            <Button onClick={goToContact}>Contact</Button>
             <Link to="/">
               <CVButton tabIndex={-1}>
                 <FontAwesomeIcon icon={faDownload} /> CV
