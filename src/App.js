@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
 import { GlobalStyles } from "./themes/globalStyles";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [selectedTheme, setSelectedTheme] = useState(themes.data.light);
@@ -20,6 +21,7 @@ const App = () => {
         <Route exact path="/" element={<Homepage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 };
