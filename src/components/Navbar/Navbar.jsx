@@ -41,7 +41,7 @@ const Navbar = ({ setSelectedTheme, selectedTheme }) => {
             {selectedTheme.name === "dark" ? "Light" : "Dark"}
           </Button>
           <Button>Contact</Button>
-          <Link to="/">
+          <Link target="_blank" rel="noreferrer" to="./cv.pdf">
             <CVButton tabIndex={-1}>
               <FontAwesomeIcon icon={faDownload} /> CV
             </CVButton>
