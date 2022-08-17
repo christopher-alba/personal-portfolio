@@ -1,16 +1,12 @@
 import React from "react";
 import About from "./About";
+import Journey from "./Journey";
 
 const Homepage = () => {
   return (
     <>
       <About />
-      <div
-        className="journey"
-        style={{ height: "100vh", border: "1px solid red" }}
-      >
-        <h1>JOURNEY</h1>
-      </div>
+      <Journey />
       <div
         className="tech"
         style={{ height: "100vh", border: "1px solid red" }}

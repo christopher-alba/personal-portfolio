@@ -7,7 +7,7 @@
         "primaryHover": "lightgray",
         "secondaryHover": "darkgray",
         "dropShadow": "rgba(0,0,0,0.3)",
-        "tertiary": "rgb(217, 217, 217)",
+        "tertiary": "#4D4D4D",
         "tertiary2": "#444444",
         "quaternary": "0094FF"
     }
