@@ -5,6 +5,7 @@ export const NavbarMainDiv = styled("div")`
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1000;
 `;
 
 export const NavbarInnerDiv = styled("div")`
