@@ -101,3 +101,33 @@ export const ColumnText = styled("p")`
   -webkit-text-fill-color: ${({ theme }) =>
     theme.name === "light" ? "rgba(0,0,0,0.2)" : "rgba(255,255,255,0.2)"};
 `;
+
+export const TechBottomDivWrapper = styled("div")`
+  background: ${({ theme }) =>
+    theme.name === "light"
+      ? 'url("./images/landing-dark.png")'
+      : 'url("./images/landing-light.png")'};
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid ${({ theme }) => theme.colors.secondary};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+`;
+
+export const TechBottomDiv = styled("div")`
+  padding: 20px;
+  color: white;
+  padding: 50px 0;
+`;
+
+interface H1Props {
+  fontWeight: number;
+}
+export const H1Styled = styled("h1")<H1Props>`
+  font-weight: ${({ fontWeight }) => fontWeight};
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 20px ${({ theme }) => theme.colors.primary};
+`;
