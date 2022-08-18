@@ -1,18 +1,14 @@
 import React from "react";
 import About from "./About";
 import Journey from "./Journey";
+import Tech from "./Tech";
 
 const Homepage = () => {
   return (
     <>
       <About />
       <Journey />
-      <div
-        className="tech"
-        style={{ height: "100vh", border: "1px solid red" }}
-      >
-        <h1>TECH</h1>
-      </div>
+      <Tech />
       <div
         className="projects"
         style={{ height: "100vh", border: "1px solid red" }}

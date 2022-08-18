@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import styled from "styled-components";
 export const NavbarMainDiv = styled("div")`
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) =>
+    theme.name === "light" ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.7)"};
   position: fixed;
   width: 100%;
   top: 0px;
   z-index: 1000;
+  backdrop-filter: blur(8px);
 `;
 
 export const NavbarInnerDiv = styled("div")`
@@ -33,7 +35,7 @@ export const ButtonsDiv = styled("div")``;
 
 export const ThemeButton = styled(Button)`
   margin-right: 10px !important;
-  background: ${({ theme }) => theme.colors.primary} !important;
+  background: transparent !important;
   color: ${({ theme }) => theme.colors.secondary} !important;
 `;
 export const CVButton = styled(Button)`
