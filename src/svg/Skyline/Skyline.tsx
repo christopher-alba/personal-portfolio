@@ -16,6 +16,7 @@ const Skyline: FC<{
 }> = ({ primary, secondary, stopColor, stopColor2 }) => {
   return (
     <SVG
+      className="skyline"
       width="1920"
       height="900"
       viewBox="0 0 1920 850"
