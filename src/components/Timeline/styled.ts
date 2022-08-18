@@ -31,7 +31,7 @@ export const TimelineItem = styled("div")`
     width: 250px;
   }
   padding: 10px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   position: relative;
   &::after {
     content: "";

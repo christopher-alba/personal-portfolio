@@ -27,7 +27,7 @@ export const DateP = styled("p")`
 `;
 
 export const CompanyH1 = styled("h1")`
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 0;
   background: url("./images/landing-light.png");
   background-attachment: fixed;
