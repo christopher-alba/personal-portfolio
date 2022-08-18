@@ -113,12 +113,14 @@ export const TechBottomDivWrapper = styled("div")`
   background-size: cover;
   border-top: 2px solid ${({ theme }) => theme.colors.secondary};
   border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+  box-shadow: 0px 0px 20px 5px ${({ theme }) => theme.colors.secondary};
 `;
 
 export const TechBottomDiv = styled("div")`
   padding: 20px;
   color: white;
   padding: 50px 0;
+  backdrop-filter: blur(8px);
 `;
 
 interface H1Props {

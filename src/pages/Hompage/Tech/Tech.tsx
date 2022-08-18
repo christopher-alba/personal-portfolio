@@ -67,7 +67,7 @@ const Tech: FC = () => {
       <TechBottomDivWrapper>
         <TechBottomDiv>
           <Container>
-            <H1Styled fontWeight={200}>
+            <H1Styled fontWeight={200} data-aos="fade-right">
               "Success is not final; failure is not fatal: It is the courage to
               continue that counts." — Winston S. Churchill
             </H1Styled>

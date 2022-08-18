@@ -1,20 +1,16 @@
 import React from "react";
 import About from "./About";
 import Journey from "./Journey";
+import Projects from "./Projects";
 import Tech from "./Tech";
 
 const Homepage = () => {
   return (
-    <>
+    <div>
       <About />
       <Journey />
       <Tech />
-      <div
-        className="projects"
-        style={{ height: "100vh", border: "1px solid red" }}
-      >
-        <h1>PROJECTS</h1>
-      </div>
+      <Projects />
       <div
         className="education"
         style={{ height: "100vh", border: "1px solid red" }}
@@ -27,7 +23,7 @@ const Homepage = () => {
       >
         <h1>CONTACT</h1>
       </div>
-    </>
+    </div>
   );
 };
 

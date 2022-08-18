@@ -50,11 +50,13 @@ const About: FC = () => {
       <AboutBottomDivWrapper>
         <AboutBottomDiv>
           <Container>
-            <H1Styled fontWeight={200}>Web Developer</H1Styled>
-            <H1Styled fontWeight={600}>
+            <H1Styled fontWeight={200} data-aos="fade-right">
+              Web Developer
+            </H1Styled>
+            <H1Styled fontWeight={600} data-aos="fade-right">
               <strong>Professional Software Engineer</strong>
             </H1Styled>
-            <H1Styled fontWeight={200}>
+            <H1Styled fontWeight={200} data-aos="fade-right">
               Final Year Computer Systems Engineer
             </H1Styled>
           </Container>

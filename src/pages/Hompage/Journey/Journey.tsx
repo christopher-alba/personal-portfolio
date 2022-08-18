@@ -1,13 +1,7 @@
 import { Container } from "@mui/material";
 import React, { FC } from "react";
 import Timeline from "../../../components/Timeline";
-import {
-  CompanyH1,
-  DateP,
-  H5Styled,
-  Header,
-  MainDiv,
-} from "./styled";
+import { CompanyH1, DateP, H5Styled, Header, MainDiv } from "./styled";
 
 const Journey: FC = () => {
   return (
@@ -91,5 +85,4 @@ const Journey: FC = () => {
     </MainDiv>
   );
 };
-
 export default Journey;
