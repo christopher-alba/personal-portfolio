@@ -36,8 +36,8 @@ const Navbar: FC<{
     var window_top_position = $(window).scrollTop() || 0;
     var window_bottom_position = window_top_position + window_height;
     return (
-      element_bottom_position >= window_top_position &&
-      element_top_position <= window_bottom_position
+      (window_bottom_position - element_top_position) / window_height > 0.5 &&
+      (element_bottom_position - window_top_position) / window_height > 0.5
     );
   };
   const animateRule = (buttonName: string) => {

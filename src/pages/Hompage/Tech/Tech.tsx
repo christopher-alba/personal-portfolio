@@ -15,8 +15,8 @@ import {
 
 const Tech: FC = () => {
   return (
-    <>
-      <MainDiv className="tech">
+    <div className="tech">
+      <MainDiv>
         <Container>
           <HeaderWrapper>
             <Header>{`</> Technology`}</Header>
@@ -74,7 +74,7 @@ const Tech: FC = () => {
           </Container>
         </TechBottomDiv>
       </TechBottomDivWrapper>
-    </>
+    </div>
   );
 };
 
