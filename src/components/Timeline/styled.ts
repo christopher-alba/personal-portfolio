@@ -28,7 +28,10 @@ export const TimelineItem = styled("div")`
   margin-left: 50px;
   width: 500px;
   @media (max-width: 650px) {
-    width: 250px;
+    width: initial;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
   }
   padding: 10px;
   padding-bottom: 100px;
