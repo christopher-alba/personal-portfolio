@@ -23,22 +23,3 @@ export const ProjectsDiv = styled("div")`
   display: flex;
   flex-wrap: wrap;
 `;
-
-export const ProjectDiv = styled("div")`
-  width: 300px;
-  height: 200px;
-  flex-grow: 0.2;
-  padding: 10px;
-  margin:10px;
-  background: url("./images/landing-light.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
-export const ProjectImg = styled("img")`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;

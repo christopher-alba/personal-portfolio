@@ -23,8 +23,17 @@ export const TimelineLine = styled("div")`
     margin-left: -3px;
   }
 `;
-
-export const TimelineItem = styled("div")`
+interface TimelineItemProps {
+  randomNumberRight: number;
+  randomNumberTop: number;
+  randomNumberHeight: number;
+  randomNumberWidth: number;
+  randomNumberRight2: number;
+  randomNumberTop2: number;
+  randomNumberHeight2: number;
+  randomNumberWidth2: number;
+}
+export const TimelineItem = styled("div")<TimelineItemProps>`
   margin-left: 50px;
   width: 500px;
   @media (max-width: 650px) {
@@ -36,6 +45,74 @@ export const TimelineItem = styled("div")`
   padding: 10px;
   padding-bottom: 100px;
   position: relative;
+  & div::after {
+    content: "";
+    position: absolute;
+    mask-image: linear-gradient(black, transparent);
+    mask-mode: alpha;
+    width: ${({ randomNumberWidth2 }) => randomNumberWidth2}px;
+    height: ${({ randomNumberHeight2 }) => randomNumberHeight2}px;
+    top: ${({ randomNumberTop2 }) => randomNumberTop2}px;
+    right: ${({ randomNumberRight2 }) => randomNumberRight2}px;
+    background: url("./images/landing-light.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 0 100%;
+    animation: falling 20s forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    @keyframes falling {
+      0% {
+        top: -200vh;
+        rotate(0deg);
+      }
+      100% {
+        top: 220vh;
+        rotate(180deg);
+      }
+    }
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    mask-image: linear-gradient(black, transparent);
+    mask-mode: alpha;
+    width: ${({ randomNumberWidth }) => randomNumberWidth}px;
+    height: ${({ randomNumberHeight }) => randomNumberHeight}px;
+    top: -200vh;
+    right: ${({ randomNumberRight }) => randomNumberRight}px;
+    background: url("./images/landing-light.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 0 100%;
+    @media (max-width: 650px) {
+      display: none;
+    }
+    animation: falling 20s forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+    @keyframes falling {
+      0% {
+        top: -200vh;
+      }
+      100% {
+        top: 220vh;
+      }
+    }
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
   &::after {
     content: "";
     position: absolute;
@@ -56,4 +133,5 @@ export const TimelineItem = styled("div")`
       background: #ff9f55 !important;
     }
   }
+  @media (max-width: );
 `;

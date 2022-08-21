@@ -5,7 +5,20 @@ const Timeline: FC<{ children: ReactNode }> = ({ children }) => {
     <TimelineMain>
       <TimelineLine>
         {Children.map(children, (child) => {
-          return <TimelineItem>{child}</TimelineItem>;
+          return (
+            <TimelineItem
+              randomNumberRight={Math.random() * -600 - 400}
+              randomNumberTop={Math.random() * 200}
+              randomNumberHeight={Math.random() * 200 + 200}
+              randomNumberWidth={Math.random() * 200 + 200}
+              randomNumberRight2={Math.random() * -300 - 400}
+              randomNumberTop2={Math.random() * 200}
+              randomNumberHeight2={Math.random() * 200 + 200}
+              randomNumberWidth2={Math.random() * 200 + 200}
+            >
+              {child}
+            </TimelineItem>
+          );
         })}
       </TimelineLine>
     </TimelineMain>

@@ -4,6 +4,7 @@ export const MainDiv = styled("div")`
   padding-top: 20vh;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 `;
 
 export const Header = styled("h1")`
