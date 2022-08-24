@@ -65,5 +65,4 @@ export const TimelineItem = styled("div")<TimelineItemProps>`
       background: #ff9f55 !important;
     }
   }
-  @media (max-width: );
 `;

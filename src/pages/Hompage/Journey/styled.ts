@@ -48,18 +48,18 @@ export const H5Styled = styled("h5")`
 
 export const Background = styled("div")`
   background: url("./images/landing-light.png");
-  filter: blur(8px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  mask-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size:cover;
+  mask-image: url("./images/skytower.svg");
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 100px;
+  top: 100px;
   bottom: 0;
-  width: 700px;
+  width: 750px;
   @media (max-width: 1400px) {
-    width: 300px;
+    right: -300px;
   }
   @media (max-width: 920px) {
     width: 0;
