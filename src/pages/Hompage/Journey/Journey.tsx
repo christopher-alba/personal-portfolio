@@ -1,14 +1,21 @@
 import { Container } from "@mui/material";
 import React, { FC } from "react";
 import Timeline from "../../../components/Timeline";
-import { CompanyH1, DateP, H5Styled, Header, MainDiv } from "./styled";
+import {
+  Background,
+  CompanyH1,
+  DateP,
+  H5Styled,
+  Header,
+  MainDiv,
+} from "./styled";
 
 const Journey: FC = () => {
   return (
     <MainDiv className="journey">
       <Container>
         <Header>My Journey in Software</Header>
-
+        <Background />
         <Timeline>
           <div>
             <DateP>July 2022 - Present</DateP>
