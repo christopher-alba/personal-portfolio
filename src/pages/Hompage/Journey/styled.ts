@@ -47,11 +47,14 @@ export const H5Styled = styled("h5")`
 `;
 
 export const Background = styled("div")`
-  background: url("./images/landing-light.png");
+  background: ${({ theme }) =>
+    theme.name === "light"
+      ? `url("./images/landing-light.png")`
+      : `url("./images/landing-dark.png")`};
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   mask-image: url("./images/skytower.svg");
   position: absolute;
   right: 100px;
