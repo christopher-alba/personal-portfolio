@@ -7,7 +7,7 @@ export const MainDiv = styled("div")`
 export const Header = styled("h1")`
   letter-spacing: 10px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   background: url("./images/landing-light.png");
   background-attachment: fixed;
   background-position: center;

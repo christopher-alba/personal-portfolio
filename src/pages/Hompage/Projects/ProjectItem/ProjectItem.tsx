@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React, { FC } from "react";
 import { Header, ImageWrapper, ProjectDiv, ProjectImg } from "./styled";
 
@@ -15,12 +16,22 @@ const ProjectItem: FC<{
       <ImageWrapper>
         <ProjectImg src={project.img} />
       </ImageWrapper>
-      <a href={project.url}>Visit</a>
+      <Button
+        fullWidth
+        href={project.url}
+        color="inherit"
+        variant="outlined"
+        style={{ borderRadius: "0" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit
+      </Button>
       <Header>{project.name}</Header>
       <p>{project.description}</p>
-      <div>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         {project.tags.map((tag) => {
-          return <div>{tag}</div>;
+          return <strong style={{ marginRight: "8px" }}>#{tag}</strong>;
         })}
       </div>
     </ProjectDiv>
