@@ -7,7 +7,7 @@
         "primaryHover": "lightgray",
         "secondaryHover": "darkgray",
         "dropShadow": "rgba(0,0,0,0.3)",
-        "tertiary": "#4D4D4D",
+        "tertiary": "#FF00A8",
         "tertiary2": "#444444",
         "quaternary": "0094FF"
     }
@@ -20,7 +20,7 @@
         "primaryHover": "darkgray",
         "secondaryHover": "lightgray",
         "dropShadow": "rgba(0,0,0,0.3)",
-        "tertiary": "rgb(217, 217, 217)",
+        "tertiary": "#fa69c8",
         "tertiary2": "#444444",
         "quaternary": "0094FF"
     }

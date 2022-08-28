@@ -5,7 +5,6 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x:hidden;
     background: ${({ theme }) => theme.colors.primary} !important;
     color: ${({ theme }) => theme.colors.secondary} !important;
-    transition: background-color 0.50s linear, color 0.3s linear ;
     font-family: 'Inter', sans-serif;
     margin:0;
     &::-webkit-scrollbar-track

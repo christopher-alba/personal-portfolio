@@ -1,11 +1,10 @@
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 export const NavbarMainDiv = styled("div")`
   background: ${({ theme }) =>
     theme.name === "light" ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.7)"};
-  position: fixed;
   width: 100%;
-  top: 0px;
   z-index: 1000;
   backdrop-filter: blur(8px);
 `;
@@ -25,22 +24,43 @@ export const LinksDiv = styled("div")`
   }
 `;
 
-export const LinkButton = styled(Button)`
+export const LinkButton = styled(Link)`
   margin: 0 10px !important;
   border-radius: 0 !important;
   color: ${({ theme }) => theme.colors.secondary} !important;
+  text-decoration: none;
 `;
 
-export const ButtonsDiv = styled("div")``;
+export const ButtonsDiv = styled("div")`
+  margin-right: 50px;
+  display: flex;
+`;
 
-export const ThemeButton = styled(Button)`
+export const ThemeButton = styled("button")`
   margin-right: 10px !important;
-  background: transparent !important;
-  color: ${({ theme }) => theme.colors.secondary} !important;
-`;
-export const CVButton = styled(Button)`
   background: ${({ theme }) => theme.colors.secondary} !important;
   color: ${({ theme }) => theme.colors.primary} !important;
+  width: 120px;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  border: none;
+`;
+export const CVButton = styled(Link)`
+  background: ${({ theme }) => theme.colors.tertiary} !important;
+  color: ${({ theme }) => theme.colors.primary} !important;
+  width: 100px;
+  padding: 10px;
+  height: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  justify-content: center;
 `;
 
 export const UnderlineDiv = styled("div")`
@@ -55,4 +75,15 @@ export const StyledRule = styled("div")`
   height: 3px;
   position: relative;
   border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+`;
+
+export const BrandWrapper = styled("div")`
+  background: ${({ theme }) => theme.colors.secondary};
+  padding: 10px 50px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => theme.colors.tertiary};
+  }
 `;

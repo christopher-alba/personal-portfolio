@@ -14,11 +14,9 @@ const Brand: FC<{
   color: string;
   width: string;
   height: string;
-  handleClick: () => void;
-}> = ({ color, width, height, handleClick }) => {
+}> = ({ color, width, height }) => {
   return (
     <SVG
-      onClick={handleClick}
       widthCustom={width}
       heightCustom={height}
       viewBox="0 0 217 44"

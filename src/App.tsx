@@ -3,21 +3,17 @@ import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import themes from "./themes/schema.json";
 import { GlobalStyles } from "./themes/globalStyles";
-import Navbar from "./components/Navbar";
-import Homepage from "./pages/Hompage";
+import Landing from "./pages/Landing";
+import Portfolio from "./pages/Portfolio";
 
 const App = () => {
-  const [selectedTheme, setSelectedTheme] = useState(themes.light);
+  const [selectedTheme] = useState(themes.light);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
-      <Navbar
-        selectedTheme={selectedTheme}
-        setSelectedTheme={setSelectedTheme}
-      />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="*" />
+        <Route path="/" element={<Landing />} />
+        <Route path="/portfolio/*" element={<Portfolio />}/>
       </Routes>
     </ThemeProvider>
   );
