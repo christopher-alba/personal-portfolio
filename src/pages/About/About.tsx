@@ -10,8 +10,9 @@ const About: FC = () => {
   const theme = useContext(ThemeContext);
   const { width } = useWindowDimensions();
   return (
-    <Container>
+    <Container data-aos="fade">
       <Legendary
+        dataAos="fade-left"
         color1={theme.colors.tertiary}
         color2={theme.colors.secondary}
         color3={theme.colors.primaryLight}
@@ -39,9 +40,12 @@ const About: FC = () => {
         the website to download my latest (hopefully lol) CV. But let’s be
         honest, it isn’t as awesome as this website, it is more concise though.
       </p>
-      <GetStartedText>So let's get started ...</GetStartedText>
+      <GetStartedText data-aos="fade-right">
+        So let's get started ...
+      </GetStartedText>
       <Characteristics>
         <Characteristic
+          dataAos="fade-up"
           text="I’m efficent. Am I Lazy? Potentially... I can make this assumption
             about myself from my previous work experiences. I tend to finish my
             assigned tasks on time and in good quality. Also, if I spend more
@@ -51,37 +55,45 @@ const About: FC = () => {
           title={`<Efficient />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="
           I’m creative. Since I was young I enjoyed drawing, designing, building things. I guess this passion never left me and now I’m applying it in software; software architecture, website UI/UX design, frontend development, backend development etc... Building websites is always satisfying, especially when done well. This means planning the website well, as well as coding it up with consideration of best practices."
           title={`<Creative />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="Being a results oriented person, when I work on projects I prefer seeing key milestones achieved within their deadlines. However, when working on projects I know that people can often get stuck and need time to learn so I can understand if people don’t have anything to show. As long as there are learnings it’s alright."
           title={`<Results Oriented />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="I’m quite practical when it comes to learning. I don’t always spend hours reading about a certain topic in software. There is only so much information I can handle and absorb so I prefer to read only about the things relevant to the projects I’m working on."
           title={`<Practical />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="Efficient + Creative + Results Oriented + Practical + Productive + Lifelong Learner + Driven + Empathetic = Legendary"
           title={`<LEGENDARY />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="
           Being a lifelong learner, I value constant upskilling and am open to constructive feedback. Software is an ever changing field and I know that the technologies I know now wont always be what I’ll be using at work. "
           title={`<Lifelong Learner />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="
           I’m driven to one day become a senior level software engineer, and is the reason why I can spend hours each day working on software projects or learning about technologies that I can use in my projects or at work. What motivates me are myself and my family."
           title={`<Driven />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="When designing UI/UX and the inner workings of a website, I can place myself in the shoes of the end users and imagine use-cases that they could want in the application I’m building. Also, when working in a team, I generally am considerate to other team members."
           title={`<Empathetic />`}
         />
         <Characteristic
+          dataAos="fade-up"
           text="Im usually a productive person. I’m either learning or doing things. However, I do have a life outside of software so I like to play video games and watch movies if I’m not working on anything or it’s outside of working hours."
           title={`<Productive />`}
         />

@@ -6,7 +6,7 @@ import { ContentDiv, H1Styled, LinkButton, MainDiv } from "./styled";
 const Landing: FC = () => {
   const { width } = useWindowDimensions();
   return (
-    <MainDiv>
+    <MainDiv data-aos="fade">
       <ContentDiv>
         <Brand
           color="black"

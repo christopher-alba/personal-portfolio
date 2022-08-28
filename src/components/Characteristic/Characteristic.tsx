@@ -4,12 +4,15 @@ import { CharacteristicDiv, Heading, SpaceshipStyled } from "./styled";
 const Characteristic: FC<{
   title: string;
   text: string;
-}> = ({ title, text }) => {
+  dataAos: string;
+}> = ({ title, text, dataAos }) => {
   return (
-    <CharacteristicDiv>
+    <CharacteristicDiv data-aos={dataAos} data-aos-duration="2000">
       <SpaceshipStyled />
       <Heading>{title}</Heading>
-      <p>{text}</p>
+      <p >
+        {text}
+      </p>
     </CharacteristicDiv>
   );
 };

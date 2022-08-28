@@ -3,7 +3,7 @@ import { ReactComponent as Spaceship } from "../../svg/spaceship.svg";
 
 export const SpaceshipStyled = styled(Spaceship)`
   color: ${({ theme }) => theme.colors.primaryLight};
-  width: 70%;
+  width: 40%;
   height: auto;
   z-index: -1;
 `;
