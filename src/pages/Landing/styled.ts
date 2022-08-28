@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainDiv = styled("div")`
-  background: url("/images/landing.png");
+  background: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

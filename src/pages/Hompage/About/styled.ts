@@ -79,3 +79,5 @@ export const H1Styled = styled("h1")<H1Props>`
   margin-bottom: 0;
   text-shadow: 2px 2px 20px ${({ theme }) => theme.colors.primary};
 `;
+
+

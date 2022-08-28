@@ -1,28 +1,36 @@
 {
-  "light":{
-    "name":"light",
-    "colors":{
-        "primary": "white",
-        "secondary": "black",
-        "primaryHover": "lightgray",
-        "secondaryHover": "darkgray",
-        "dropShadow": "rgba(0,0,0,0.3)",
-        "tertiary": "#FF00A8",
-        "tertiary2": "#444444",
-        "quaternary": "0094FF"
+  "light": {
+    "name": "light",
+    "colors": {
+      "primary": "white",
+      "primaryLight": "#ededed",
+      "secondary": "black",
+      "primaryHover": "lightgray",
+      "secondaryHover": "darkgray",
+      "dropShadow": "rgba(0,0,0,0.3)",
+      "tertiary": "#6a16f2",
+      "tertiary2": "#BCBCBC",
+      "tertiary3": "#8F00FF",
+      "tertiary4": "#8724b5",
+      "tertiary5": "#2A006F",
+      "quaternary": "0094FF"
     }
   },
-  "dark":{
-    "name":"dark",
-    "colors":{
-        "primary": "black",
-        "secondary": "white",
-        "primaryHover": "darkgray",
-        "secondaryHover": "lightgray",
-        "dropShadow": "rgba(0,0,0,0.3)",
-        "tertiary": "#fa69c8",
-        "tertiary2": "#444444",
-        "quaternary": "0094FF"
+  "dark": {
+    "name": "dark",
+    "colors": {
+      "primary": "black",
+      "primaryLight": "#262626",
+      "secondary": "white",
+      "primaryHover": "darkgray",
+      "secondaryHover": "lightgray",
+      "dropShadow": "rgba(0,0,0,0.3)",
+      "tertiary": "#9760f0",
+      "tertiary2": "#BCBCBC",
+      "tertiary3": "#8F00FF",
+      "tertiary4": "#8724b5",
+      "tertiary5": "#ab71e3",
+      "quaternary": "0094FF"
     }
   }
 }
