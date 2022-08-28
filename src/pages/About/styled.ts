@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as Spaceship } from "../../svg/spaceship.svg";
 export const StyledSpan = styled("span")`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.tertiary};

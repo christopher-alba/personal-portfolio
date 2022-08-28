@@ -1,5 +1,4 @@
-import React, { FC, useContext } from "react";
-import { ThemeContext } from "styled-components";
+import React, { FC } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Brand from "../../svg/Brand";
 import { ContentDiv, H1Styled, LinkButton, MainDiv } from "./styled";
