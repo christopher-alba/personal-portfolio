@@ -2,11 +2,13 @@ import { Container } from "@mui/material";
 import React, { FC, useContext } from "react";
 import { ThemeContext } from "styled-components";
 import Characteristic from "../../components/Characteristic";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Legendary from "../../svg/Legendary";
 import { GetStartedText, StyledSpan, Characteristics } from "./styled";
 
 const About: FC = () => {
   const theme = useContext(ThemeContext);
+  const { width } = useWindowDimensions();
   return (
     <Container>
       <Legendary
@@ -21,7 +23,7 @@ const About: FC = () => {
           marginTop: "50px",
           marginBottom: "100px",
           position: "relative",
-          left: "-40px",
+          left: width > 600 ? "-40px" : "0",
         }}
       />
       <p>

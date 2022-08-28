@@ -6,6 +6,8 @@ export const NavbarMainDiv = styled("div")`
     theme.name === "light" ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.7)"};
   width: 100%;
   z-index: 1000;
+  position: sticky;
+  top: 0;
   backdrop-filter: blur(8px);
 `;
 
@@ -19,7 +21,7 @@ export const NavbarInnerDiv = styled("div")`
 
 export const LinksDiv = styled("div")`
   position: relative;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -34,6 +36,9 @@ export const LinkButton = styled(Link)`
 export const ButtonsDiv = styled("div")`
   margin-right: 50px;
   display: flex;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const ThemeButton = styled("button")`
@@ -85,5 +90,30 @@ export const BrandWrapper = styled("div")`
   cursor: pointer;
   &:hover {
     background: ${({ theme }) => theme.colors.tertiary};
+  }
+`;
+
+export const BarsButton = styled("button")`
+  margin-right: 10px;
+  background: transparent;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.secondary};
+  border-radius: 5px;
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  display: flex;
+  align-items: center;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+`;
+
+export const MenuDiv = styled("div")`
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: ${({ theme }) => theme.colors.primaryLight};
+  & > * {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
   }
 `;
