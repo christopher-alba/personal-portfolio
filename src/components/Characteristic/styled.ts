@@ -3,9 +3,9 @@ import { ReactComponent as Spaceship } from "../../svg/spaceship.svg";
 
 export const SpaceshipStyled = styled(Spaceship)`
   color: ${({ theme }) => theme.colors.primaryLight};
-  width: 70%;
+  width: 40%;
   height: auto;
-  z-index: -1;
+  filter: drop-shadow(0 5px 0 ${({ theme }) => theme.colors.tertiary}) drop-shadow(0 10px 0 ${({ theme }) => theme.colors.secondary});
 `;
 
 export const CharacteristicDiv = styled("div")`
@@ -26,7 +26,6 @@ export const Characteristics = styled("div")`
 
 export const Heading = styled("h1")`
   color: ${({ theme }) => theme.colors.tertiary};
-  font-size:1.3rem;
-  font-weight:900;
+  font-size: 1.3rem;
+  font-weight: 900;
 `;
-
