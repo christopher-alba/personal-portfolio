@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { ReactComponent as Spaceship } from "../../svg/spaceship.svg";
+import { ReactComponent as Spaceship } from "../../svg/spaceship2.svg";
 
 export const SpaceshipStyled = styled(Spaceship)`
   color: ${({ theme }) => theme.colors.primaryLight};
   width: 40%;
   height: auto;
-  filter: drop-shadow(0 5px 0 ${({ theme }) => theme.colors.tertiary}) drop-shadow(0 10px 0 ${({ theme }) => theme.colors.secondary});
+  filter: drop-shadow(0 5px 0 ${({ theme }) => theme.colors.tertiary}) drop-shadow(0 5px 0 ${({ theme }) => theme.colors.secondary});
 `;
 
 export const CharacteristicDiv = styled("div")`

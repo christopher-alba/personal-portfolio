@@ -178,17 +178,6 @@ const Navbar: FC<{
               className="underline"
               style={{
                 position: "relative",
-                width: `${
-                  document
-                    .getElementsByClassName("about-button")[0]
-                    ?.getBoundingClientRect()?.width
-                }px`,
-                left:
-                  (
-                    document.getElementsByClassName(
-                      "about-button"
-                    )[0] as HTMLElement
-                  )?.offsetLeft + "px",
               }}
             />
           </UnderlineDiv>
