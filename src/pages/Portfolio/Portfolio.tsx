@@ -8,7 +8,9 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../themes/globalStyles";
 
 const Portfolio: FC = () => {
-  const [selectedTheme, setSelectedTheme] = useState(themes.light);
+  const [selectedTheme, setSelectedTheme] = useState(
+    JSON.parse(localStorage.getItem("theme") as any) || themes.light
+  );
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />

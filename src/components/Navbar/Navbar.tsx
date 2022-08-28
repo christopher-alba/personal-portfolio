@@ -29,6 +29,12 @@ const Navbar: FC<{
     setSelectedTheme(
       selectedTheme.name === "light" ? themes.dark : themes.light
     );
+    localStorage.setItem(
+      "theme",
+      JSON.stringify(
+        selectedTheme.name === "light" ? themes.dark : themes.light
+      )
+    );
   };
   const animateRule = (buttonName: string) => {
     if (buttonName === "invisible") {

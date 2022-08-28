@@ -8,7 +8,6 @@ interface SVGProps {
 const SVG = styled("svg")<SVGProps>`
   width: ${({ widthCustom }) => widthCustom};
   height: ${({ heightCustom }) => heightCustom};
-  cursor: pointer;
 `;
 const Brand: FC<{
   color: string;
