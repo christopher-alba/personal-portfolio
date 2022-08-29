@@ -5,7 +5,7 @@ export const NavbarMainDiv = styled("div")`
     theme.name === "light" ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.7)"};
   width: 100%;
   z-index: 1000;
-  position: sticky;
+  position: relative;
   top: 0;
   backdrop-filter: blur(8px);
 `;

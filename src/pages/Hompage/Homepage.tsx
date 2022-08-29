@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About";
 import Journey from "./Journey";
 import Projects from "./Projects";
-import Tech from "./Tech";
+import Tech from "../Tech";
 
 const Homepage = () => {
   return (
