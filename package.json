@@ -14,7 +14,7 @@
     "@types/jest": "^28.1.7",
     "@types/jquery": "^3.5.14",
     "@types/node": "^18.7.5",
-    "@types/react": "^18.0.17",
+    "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
     "aos": "^2.3.4",
@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
+    "@types/react-router-dom": "^5.3.3",
     "@types/rellax": "^1.7.4"
   }
 }
