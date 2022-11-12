@@ -5,11 +5,11 @@ import { GlobalStyles } from "./themes/globalStyles";
 import MainPage from "./pages/MainPage";
 
 const App = () => {
-  const [selectedTheme] = useState(themes.light);
+  const [selectedTheme, setSelectedTheme] = useState(themes.light);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
-      <MainPage />
+      <MainPage setSelectedTheme={setSelectedTheme} />
     </ThemeProvider>
   );
 };

@@ -8,6 +8,10 @@ interface SVGProps {
 const SVG = styled("svg")<SVGProps>`
   width: ${({ widthCustom }) => widthCustom};
   height: ${({ heightCustom }) => heightCustom};
+  @media(max-width:500px){
+    height:auto;
+    width: 150px;
+  }
 `;
 const Brand: FC<{
   color: string;

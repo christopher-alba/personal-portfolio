@@ -1,0 +1,54 @@
+import React, { FC, useContext } from "react";
+import { NavbarMainDiv, StyledButton, StyledLinkButton } from "./styled";
+import Brand from "../../svg/Brand";
+import { DefaultTheme, ThemeContext } from "styled-components";
+import { Container } from "@mui/system";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import themes from "../../themes/schema.json";
+const Navbar: FC<{
+  setSelectedTheme: React.Dispatch<React.SetStateAction<DefaultTheme>>;
+}> = ({ setSelectedTheme }) => {
+  const theme = useContext(ThemeContext);
+  const changeTheme = () => {
+    if (theme.name === "light") {
+      setSelectedTheme(themes.dark);
+    } else {
+      setSelectedTheme(themes.light);
+    }
+  };
+  return (
+    <NavbarMainDiv>
+      <Container
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <Brand color={theme.colors.primary} height="auto" width="200px" />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <StyledButton onClick={changeTheme}>
+            {theme.name === "light" ? (
+              <FontAwesomeIcon icon={faMoon} />
+            ) : (
+              <FontAwesomeIcon icon={faSun} />
+            )}
+            {theme.name === "light" ? " Dark" : " Light"}
+          </StyledButton>
+          <StyledLinkButton target="_blank" rel="noreferrer" to="./cv.pdf">
+            CV <FontAwesomeIcon icon={faDownload} />
+          </StyledLinkButton>
+        </div>
+      </Container>
+    </NavbarMainDiv>
+  );
+};
+
+export default Navbar;

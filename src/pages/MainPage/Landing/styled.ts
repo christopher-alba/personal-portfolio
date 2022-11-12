@@ -11,6 +11,7 @@ export const MainDiv = styled("div")`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const OverlayDiv = styled("div")`
@@ -19,7 +20,7 @@ export const OverlayDiv = styled("div")`
     #8f00ff 0%,
     rgba(99, 28, 255, 0.92) 14.58%,
     rgba(0, 133, 255, 0.7) 54.69%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 0) 100%
   );
   display: flex;
   flex-direction: column;
