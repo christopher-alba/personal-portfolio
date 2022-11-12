@@ -23,7 +23,7 @@ const Navbar: FC<{
     }
   };
   return (
-    <NavbarMainDiv>
+    <NavbarMainDiv className="navbar-main">
       <StyledContainer>
         <NavbarInner>
           <Brand color={theme.colors.secondary} height="auto" width="200px" />

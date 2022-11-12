@@ -11,6 +11,11 @@ import {
 } from "./styled";
 
 const Landing: FC = () => {
+  const navigateDown = () => {
+    document
+      .getElementsByClassName("navbar-main")[0]
+      .scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <MainDiv>
       <OverlayDiv>
@@ -38,7 +43,7 @@ const Landing: FC = () => {
             </a>
           </InfoText>
           <InfoText>Specialises in Full-stack Web Development</InfoText>
-          <KeyboardArrowDownIconStyled />
+          <KeyboardArrowDownIconStyled onClick={navigateDown} />
         </TextDiv>
       </OverlayDiv>
     </MainDiv>
