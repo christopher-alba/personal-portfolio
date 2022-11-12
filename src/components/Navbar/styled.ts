@@ -9,7 +9,7 @@ export const NavbarMainDiv = styled("div")`
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  padding: 20px 0;
+  padding: 50px 0;
 `;
 
 export const StyledContainer = styled(Container)``;
@@ -20,6 +20,7 @@ export const NavbarInner = styled("div")`
   padding: 20px;
   background: ${({ theme }) => theme.colors.primary};
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 export const StyledLinkButton = styled(Link)`
   color: white;

@@ -43,6 +43,7 @@ export const ProfileDiv = styled("div")`
   min-height: 300px;
   border-radius: 10px;
   padding: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 export const ProfileTopDiv = styled("div")`
   display: flex;
