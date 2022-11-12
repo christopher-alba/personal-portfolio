@@ -30,6 +30,11 @@ export const StyledHeading = styled("h1")`
   text-fill-color: transparent;
   font-size: 2.5rem;
   font-weight: 800;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const ProfileDiv = styled("div")`
@@ -115,5 +120,15 @@ export const ContactDiv = styled("div")`
   justify-content: center;
   @media (max-width: 900px) {
     flex-direction: column;
+  }
+`;
+
+export const FlagImg = styled("img")`
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  @media (max-width: 900px) {
+    width: 50px;
+    height: 25px;
   }
 `;

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { FC } from "react";
 import {
   ContactDiv,
+  FlagImg,
   MainDiv,
   ProfileDesc,
   ProfileDescDiv,
@@ -28,7 +29,14 @@ const About: FC = () => {
           <ProfileTopDiv>
             <ProfilePicture src="/images/profileImage.png"></ProfilePicture>
             <ProfileDescDiv>
-              <StyledHeading>About</StyledHeading>
+              <StyledHeading>
+                About{" "}
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <FlagImg src="images/nz.png" />
+                  <FlagImg src="images/php.jpg" />
+                  <FlagImg src="images/cn.png" />
+                </div>
+              </StyledHeading>
               <ProfileDesc>
                 From a young age I’ve enjoyed design and problem solving. Fast
                 forward to the present, and I’m applying my creativity in
@@ -42,6 +50,7 @@ const About: FC = () => {
               </ProfileDesc>
             </ProfileDescDiv>
           </ProfileTopDiv>
+
           <ContactDiv>
             <StyledAnchor href="mailto:chris.alba.dev@gmail.com">
               <FontAwesomeIcon icon={faMailBulk} /> chris.alba.dev@gmail.com
