@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { FC } from "react";
 import {
+  ContactDiv,
   MainDiv,
   ProfileDesc,
   ProfileDescDiv,
@@ -18,6 +19,7 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 const About: FC = () => {
   return (
     <MainDiv>
@@ -36,13 +38,18 @@ const About: FC = () => {
                 experience. However, the backend performance of a website also
                 impacts the user experience, and also allows me to use my
                 creativity to come up with solutions. Therefore, I am also open
-                to working in the backend or fullstack roles. I’m currently in
-                my final year of engineering at the University of Auckland, and
-                am looking for a graduate/junior software engineer/developer
-                position.
+                to working in the backend or fullstack roles.
               </ProfileDesc>
             </ProfileDescDiv>
           </ProfileTopDiv>
+          <ContactDiv>
+            <StyledAnchor href="mailto:chris.alba.dev@gmail.com">
+              <FontAwesomeIcon icon={faMailBulk} /> chris.alba.dev@gmail.com
+            </StyledAnchor>
+            <StyledAnchor href="tel:+642108173338">
+              <FontAwesomeIcon icon={faPhone} /> +64 02108173338
+            </StyledAnchor>
+          </ContactDiv>
           <SocialLinksDiv>
             <StyledAnchor
               href="https://github.com/christopher-alba"

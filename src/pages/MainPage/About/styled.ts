@@ -75,8 +75,8 @@ export const SocialLinksDiv = styled("div")`
     }
   }};
   max-width: 100%;
-  min-height: 100px;
-  margin-top: 50px;
+  min-height: 50px;
+  margin-top: 15px;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -89,10 +89,31 @@ export const SocialLinksDiv = styled("div")`
 
 export const StyledAnchor = styled("a")`
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.tertiary};
   &:hover {
     color: ${({ theme }) => theme.colors.tertiary2};
+  }
+`;
+
+export const ContactDiv = styled("div")`
+  background: ${({ theme }) => {
+    if (theme.name === "light") {
+      return "#fafafa";
+    } else {
+      return "#2b2b2b";
+    }
+  }};
+  max-width: 100%;
+  min-height: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-direction: column;
   }
 `;
