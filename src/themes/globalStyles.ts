@@ -3,7 +3,17 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   body {
     overflow-x:hidden;
-    background: ${({ theme }) => theme.colors.primary} !important;
+    background: ${({ theme }) => {
+      if (theme.name === "light") {
+        return "url('/images/skyline.jpg')";
+      } else {
+        return "url('/images/skyline-dark.jpg')";
+      }
+    }};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: ${({ theme }) => theme.colors.secondary} !important;
     font-family: 'Inter', sans-serif;
     margin:0;

@@ -7,11 +7,6 @@ export const MainDiv = styled("div")`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: url("/images/skyline.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 `;
 
 export const OverlayDiv = styled("div")`
@@ -42,7 +37,7 @@ export const HeroText = styled("h1")`
   letter-spacing: 5px;
   @media (max-width: ${viewportSize}px) {
     font-size: 3rem;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -66,7 +61,7 @@ export const InfoText = styled("p")`
   font-weight: 200;
   @media (max-width: ${viewportSize}px) {
     font-size: 1rem;
-    margin-bottom:15px;
+    margin-bottom: 15px;
   }
 `;
 

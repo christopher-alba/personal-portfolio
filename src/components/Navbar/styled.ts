@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavbarMainDiv = styled("div")`
-  background: url("/images/skyline.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   width: 100%;
   padding: 50px 0;
 `;

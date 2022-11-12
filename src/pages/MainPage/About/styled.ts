@@ -7,11 +7,6 @@ export const MainDiv = styled("div")`
   justify-content: center;
   height: fit-content;
   width: 100%;
-  background: url("/images/skyline.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 `;
 
 export const StyledContainer = styled(Container)`
