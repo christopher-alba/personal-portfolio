@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { DefaultTheme } from "styled-components";
 import Navbar from "../../components/Navbar";
 import About from "./About";
+import Journey from "./Journey";
 import Landing from "./Landing";
 
 const MainPage: FC<{
@@ -12,6 +13,7 @@ const MainPage: FC<{
       <Landing />
       <Navbar setSelectedTheme={setSelectedTheme} />
       <About />
+      <Journey />
     </>
   );
 };

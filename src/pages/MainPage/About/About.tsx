@@ -6,12 +6,10 @@ import {
   MainDiv,
   ProfileDesc,
   ProfileDescDiv,
-  ProfileDiv,
   ProfilePicture,
   ProfileTopDiv,
   SocialLinksDiv,
   StyledAnchor,
-  StyledContainer,
   StyledHeading,
 } from "./styled";
 import {
@@ -21,11 +19,13 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { MajorSection } from "../../../components/MajorSection";
+import { StyledContainer } from "../../../components/StyledContainer";
 const About: FC = () => {
   return (
     <MainDiv>
       <StyledContainer>
-        <ProfileDiv>
+        <MajorSection>
           <ProfileTopDiv>
             <ProfilePicture src="/images/profileImage.png"></ProfilePicture>
             <ProfileDescDiv>
@@ -89,7 +89,7 @@ const About: FC = () => {
               <FontAwesomeIcon icon={faFacebook} /> Facebook{" "}
             </StyledAnchor>
           </SocialLinksDiv>
-        </ProfileDiv>
+        </MajorSection>
       </StyledContainer>
     </MainDiv>
   );

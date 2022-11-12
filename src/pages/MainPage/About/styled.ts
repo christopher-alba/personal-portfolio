@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import styled from "styled-components";
 
 export const MainDiv = styled("div")`
@@ -7,15 +6,6 @@ export const MainDiv = styled("div")`
   justify-content: center;
   height: fit-content;
   width: 100%;
-`;
-
-export const StyledContainer = styled(Container)`
-  margin-top: 100px;
-  margin-bottom: 100px;
-  @media (max-width: 900px) {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 `;
 
 export const StyledHeading = styled("h1")`
@@ -37,14 +27,6 @@ export const StyledHeading = styled("h1")`
   justify-content: space-between;
 `;
 
-export const ProfileDiv = styled("div")`
-  background: ${({ theme }) => theme.colors.primary};
-  max-width: 100%;
-  min-height: 300px;
-  border-radius: 10px;
-  padding: 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-`;
 export const ProfileTopDiv = styled("div")`
   display: flex;
   align-items: center;
@@ -127,6 +109,7 @@ export const FlagImg = styled("img")`
   width: 100px;
   height: 50px;
   margin-left: 20px;
+  border-radius:10px;
   @media (max-width: 900px) {
     width: 50px;
     height: 25px;
