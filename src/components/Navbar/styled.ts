@@ -1,15 +1,28 @@
+import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavbarMainDiv = styled("div")`
-  background: ${({ theme }) => theme.colors.secondary};
+  background: url("/images/skyline.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 100%;
   padding: 20px 0;
 `;
 
+export const StyledContainer = styled(Container)``;
+export const NavbarInner = styled("div")`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: ${({ theme }) => theme.colors.primary};
+  border-radius: 10px;
+`;
 export const StyledLinkButton = styled(Link)`
-  color: ${({ theme }) => theme.colors.primary};
+  color: white;
   text-decoration: none;
   background: ${({ theme }) => theme.colors.tertiary2};
   padding: 10px 20px;
@@ -22,13 +35,13 @@ export const StyledLinkButton = styled(Link)`
 `;
 
 export const StyledButton = styled("button")`
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
+  background: ${({ theme }) => theme.colors.primary};
   padding: 10px 20px;
   border-radius: 5px;
   transition: 300ms;
   margin-right: 10px;
-  border: 2px solid ${({ theme }) => theme.colors.primary};
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
   &:hover {
     background: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.secondary};
