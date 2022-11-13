@@ -6,16 +6,27 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.3",
+    "@types/jest": "^28.1.7",
+    "@types/jquery": "^3.5.14",
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "aos": "^2.3.4",
+    "jquery": "^3.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5"
+    "rellax": "^1.12.1",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,5 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/rellax": "^1.7.4"
   }
 }
