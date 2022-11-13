@@ -17,7 +17,7 @@ const Landing: FC = () => {
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <MainDiv>
+    <MainDiv data-aos="fade">
       <OverlayDiv>
         <TextDiv>
           <HeroText>Hello There!</HeroText>

@@ -1,5 +1,12 @@
 import React, { FC } from "react";
-import { CompanyLogo, CompanyName, InfoDiv, MainDiv, TechnologyBlock } from "./styled";
+import {
+  CompanyLogo,
+  CompanyName,
+  InfoDiv,
+  MainDiv,
+  TechnologyBlock,
+  TechWrapperDiv,
+} from "./styled";
 
 const JourneyBlock: FC<{
   logoSrc: string;
@@ -15,9 +22,11 @@ const JourneyBlock: FC<{
         <CompanyName>{companyName}</CompanyName>
         <p>{dates}</p>
         <p>{description}</p>
-        {technologies.map((tech) => (
-          <TechnologyBlock>{tech}</TechnologyBlock>
-        ))}
+        <TechWrapperDiv>
+          {technologies.map((tech) => (
+            <TechnologyBlock>{tech}</TechnologyBlock>
+          ))}
+        </TechWrapperDiv>
       </InfoDiv>
     </MainDiv>
   );

@@ -6,9 +6,9 @@ import { StyledHeading } from "../../../components/StyledHeading";
 
 const Journey: FC = () => {
   return (
-    <StyledContainer>
+    <StyledContainer data-aos="fade-up" >
       <MajorSection>
-        <StyledHeading>Journey</StyledHeading>
+        <StyledHeading>Career Journey</StyledHeading>
         <JourneyBlock
           logoSrc="/images/turners.jpg"
           companyName="Turners Automotive Group - Graduate Software Engineer"

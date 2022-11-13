@@ -23,7 +23,7 @@ import { MajorSection } from "../../../components/MajorSection";
 import { StyledContainer } from "../../../components/StyledContainer";
 const About: FC = () => {
   return (
-    <MainDiv>
+    <MainDiv data-aos="fade-up" >
       <StyledContainer>
         <MajorSection>
           <ProfileTopDiv>

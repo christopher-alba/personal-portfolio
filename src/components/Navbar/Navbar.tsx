@@ -11,6 +11,7 @@ import { DefaultTheme, ThemeContext } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import themes from "../../themes/schema.json";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 const Navbar: FC<{
   setSelectedTheme: React.Dispatch<React.SetStateAction<DefaultTheme>>;
 }> = ({ setSelectedTheme }) => {
@@ -22,11 +23,16 @@ const Navbar: FC<{
       setSelectedTheme(themes.light);
     }
   };
+  const { width } = useWindowDimensions();
   return (
     <NavbarMainDiv className="navbar-main">
       <StyledContainer>
         <NavbarInner>
-          <Brand color={theme.colors.secondary} height="auto" width="200px" />
+          {width <= 600 ? (
+            ""
+          ) : (
+            <Brand color={theme.colors.secondary} height="auto" width="200px" />
+          )}
           <div
             style={{
               display: "flex",
