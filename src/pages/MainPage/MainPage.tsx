@@ -7,6 +7,7 @@ import Journey from "./Journey";
 import Landing from "./Landing";
 import { BacktoTopButton } from "./styled";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import Projects from "./Projects";
 const MainPage: FC<{
   setSelectedTheme: React.Dispatch<React.SetStateAction<DefaultTheme>>;
 }> = ({ setSelectedTheme }) => {
@@ -44,6 +45,7 @@ const MainPage: FC<{
       <Navbar setSelectedTheme={setSelectedTheme} />
       <About />
       <Journey />
+      <Projects />
     </>
   );
 };
