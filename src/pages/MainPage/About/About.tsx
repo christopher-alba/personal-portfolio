@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import {
   ContactDiv,
   FlagImg,
+  FlagWrapper,
   MainDiv,
   ProfileDesc,
   ProfileDescDiv,
@@ -23,7 +24,7 @@ import { MajorSection } from "../../../components/MajorSection";
 import { StyledContainer } from "../../../components/StyledContainer";
 const About: FC = () => {
   return (
-    <MainDiv data-aos="fade-up" >
+    <MainDiv data-aos="fade-up">
       <StyledContainer>
         <MajorSection>
           <ProfileTopDiv>
@@ -31,11 +32,11 @@ const About: FC = () => {
             <ProfileDescDiv>
               <StyledHeading>
                 About{" "}
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <FlagWrapper>
                   <FlagImg src="images/nz.png" />
                   <FlagImg src="images/php.jpg" />
                   <FlagImg src="images/cn.png" />
-                </div>
+                </FlagWrapper>
               </StyledHeading>
               <ProfileDesc>
                 From a young age I’ve enjoyed design and problem solving. Fast

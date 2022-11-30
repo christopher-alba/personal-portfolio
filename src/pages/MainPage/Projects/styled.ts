@@ -9,6 +9,9 @@ export const ProjectDiv = styled("div")`
   width: 300px;
   flex-grow: 1;
   margin: 30px;
+  @media (max-width: 500px) {
+    margin: 30px 0;
+  }
 `;
 
 export const StyledImg = styled("img")`

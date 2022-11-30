@@ -7,4 +7,7 @@ export const MajorSection = styled("div")`
   border-radius: 10px;
   padding: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  @media(max-width:500px){
+    padding:30px;
+  }
 `;

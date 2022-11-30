@@ -39,7 +39,6 @@ export const ProfileDesc = styled("p")``;
 export const ProfileDescDiv = styled("div")`
   padding-left: 50px;
   @media (max-width: 900px) {
-    text-align: center;
     padding-left: 0;
   }
 `;
@@ -82,6 +81,9 @@ export const StyledAnchor = styled("a")`
   &:hover {
     color: ${({ theme }) => theme.colors.tertiary2};
   }
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ContactDiv = styled("div")`
@@ -99,6 +101,7 @@ export const ContactDiv = styled("div")`
   padding: 20px;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   @media (max-width: 900px) {
     flex-direction: column;
@@ -109,9 +112,16 @@ export const FlagImg = styled("img")`
   width: 100px;
   height: 50px;
   margin-left: 20px;
-  border-radius:10px;
+  border-radius: 10px;
   @media (max-width: 900px) {
     width: 50px;
     height: 25px;
+  }
+`;
+export const FlagWrapper = styled("div")`
+  display: flex;
+  align-items: center;
+  @media (max-width: 500px) {
+    display: none;
   }
 `;
